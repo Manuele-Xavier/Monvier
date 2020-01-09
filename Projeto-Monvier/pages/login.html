@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="container_menu">
+            <img src="../img/Ativo 2.png" class="logo">
+            <nav>
+                <ul class="menu">
+                    <li><a href="../pages/index.html">HOME</a></li>
+                    <li><a href="#">ROUPAS</a></ldivi>
+                    <li><a href="#">CALÇADOS</a></li>
+                    <li><a href="#">SOBRE NÓS</a></li>
+                </ul>
+            </nav>
+            <div class="icones_menu">
+                <img src="../img/Imagem6.png">
+                <a id="myBtn"><img src="../img/Imagem2.png"></a>
+                <a href="#"><img src="../img/Imagem4.png"></a>
+
+            </div>
+
+        </div>
+
+
+    </header>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <img src="../img/iconn2.png" class="icon_login">
+            <span class="close">&times;</span>
+            <form method="POST" class="form_logar">
+                <div class="inputs_logar">
+
+                    <label>
+                        <input type="text" placeholder="E-mail:">
+                    </label>
+                    <label> 
+                        <input type="password" placeholder="Senha:">
+                    </label>
+                </div>
+                <div class="espaco_btn">
+                    <button>
+                        Entrar
+                    </button>
+                </div>
+
+
+            </form>
+            <p class="t_modal">Não tem uma conta?</p>
+            <a href="../pages/login.html"> <button class="btn2"> Cadastre-se</button> </a>
+
+        </div>
+
+    </div>
+    <main>
+        <div class="container_login">
+        <form method="POST" class="form_cadas">
+            <div class="esquerdo_form">
+                <label>
+                    <input type="text" placeholder="Nome">
+                </label>
+                <label>
+                    <input type="text" placeholder="E-mail">
+                </label>
+
+                <label>
+                    <input type="password" placeholder="Senha">
+                </label>
+                <label>
+                    <input type="password" placeholder="Confirmar senha">
+                </label>
+                <div class="input_btn">
+                    <button class="btn_i_1">
+                        Cadastrar
+                    </button>
+            </div>
+            </div>
+            <div class="direito_form">
+                
+                    <label>
+            
+                        <input type="text" placeholder="Data de nascimento" >
+                    </label>
+                   
+                
+
+                
+                <div class="Endereco">
+                    <div class="input_e">
+                    <label>
+                        <input type="text" placeholder="Endereço" >
+                    </label>
+                </div>
+                <div class="input_n">
+                    <label>
+                        <input type="text" placeholder="N°" >
+                    </label>
+                </div>
+
+
+                </div>
+                <label>
+                    <input type="text" placeholder="Cep">
+                </label>
+
+
+                <label> 
+                <div class="radius">
+                        <input type="radio" name="sexo">Feminino</input>
+                        <input type="radio" name="sexo" >Masculino</input>
+                        <input type="radio" name="sexo" >Outros</input>
+                    </div>
+                    <div class="input_btn">
+                        <button class="btn_i_2">
+                            Cancelar
+                        </button>
+                    </div>
+            </div>
+
+
+        </form>
+    </div>
+    </main>
+    <footer>
+        <div class="container_footer">
+            <div class="border">
+    
+            </div>
+            <div class="conteudo_footer">
+            <div class="for1">
+                <p class="titulo_f">
+                    MONVIER
+                </p>
+                <p class="cont_p">
+                    marca que tem como objetivo propagar a moda unissex para o Brasil, nada melhor que viver o novo!
+                </p>
+            </div>
+            <div class="for1">
+                <p class="titulo_f">
+                    FORMAS DE PAGAMENTO
+                </p>
+                <img src="../img/bandeiras.png" class="bandeiras">
+            </div>
+            <div class="for1">
+                <p class="titulo_f">
+                    INFORMAÇÕES
+                </p>
+                <div class="incons_info">
+                    <div class="espaco_info" >
+                        <img src="../img/ic1.png">
+                        <p>(11)5673-0987</p>
+                    </div>
+                    <div class="espaco_info" >
+                        <img src="../img/1c2.png">
+                        <p>monvier@gmail.com</p>
+                    </div>
+                    <div class="espaco_info" >
+                        <img src="../img/ic3.png">
+                        <p>rua teste kdfdkf</p>
+                    </div>
+                    
+
+                </div>
+            </div>
+            <div class="for1">
+                <p class="titulo_f">
+                    REDES SOCIAIS
+                </p>
+                <div class="redes_s">
+                    <img src="../img/redes1.png">
+                    <img src="../img/redes2.png">
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

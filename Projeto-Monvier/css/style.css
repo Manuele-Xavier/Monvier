@@ -1,0 +1,355 @@
+@import  url('https://fonts.googleapis.com/css?family=Gelasio|Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(250, 250, 250);
+}
+header{
+    background-color: #979797;
+    
+}
+.container_menu{
+    display: flex;
+    align-items: center;
+    height: 13vh;
+    justify-content: space-between;
+}
+.logo{
+    width: 13vw;
+    margin-left: 4vw;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+    list-style: none;
+    margin-right: 30vw;
+    margin-bottom: 0.8vh;
+
+}
+.menu a{
+    text-decoration: none;
+    color: #ffffff;
+    
+    
+}
+.menu a:hover{
+    color: #464646;
+    
+}
+.icones_menu img:hover{
+    width: 2vw;
+    
+}
+.icones_menu img{
+    width: 1.4vw;
+    cursor: pointer;
+}
+.icones_menu{
+    margin-right: 4vw;
+    display: flex;
+    justify-content: space-between;
+    width: 8vw;
+    margin-bottom: 0.8vh;
+    align-items: center;
+}
+.container_footer{
+    background-color: rgb(250, 250, 250);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+    flex-wrap: wrap;
+}
+.border{
+    border: 1.5px solid #979797;
+    width: 92%;
+    display: flex;
+    justify-content: center;
+   
+}
+.conteudo_footer{
+    padding-top: 40px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.titulo_f{
+    color: rgb(47, 47, 47);
+    font-size: 0.9em;
+    font-weight: 700;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.for1{
+    width: 21.25%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+.bandeiras{
+    width: 210px;
+}
+.cont_p{
+    color:rgb(47, 47, 47);
+}
+.incons_info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:flex-start;
+    margin-left: 14px;
+}
+
+.espaco_info{
+    display: flex;
+    justify-content: flex-start;
+    line-height: 1.8em;
+    align-items: flex-start;
+    
+}
+.espaco_info p{
+    margin-left: 8px;
+    
+    
+}
+.espaco_info img{
+    width: 1.5vw;
+    height: 3vh;
+    cursor: pointer;
+
+}
+.redes_s{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+    width: 10vw;
+}
+.redes_s img{
+    width: 3vw;
+}
+.banner{
+    background-image: url(../img/banner4.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(../img/banner4.jpg); 
+    width: 100%;
+    height: 84vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    
+}
+/* modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  /* background-color: rgb(0,0,0); Fallback color */
+  background-color: rgba(218, 218, 218, 0.514); /* Black w/ opacity */
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefefa;
+  margin: auto;
+  padding: 20px;
+  width: 40%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column ;
+  align-items: center;
+  
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position:relative;
+  left: 16vw;
+}
+
+.close:hover,
+.close:focus {
+  
+  text-decoration: none;
+  cursor: pointer;
+}
+.form_logar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    
+
+}
+.inputs_logar{
+    width: 25vw;
+}
+.form_logar input{
+    width: 24.6vw;
+    border: none;
+    border-bottom: 2px solid #979797;
+    height: 7vh;
+    padding-left: 3px;
+    background-color: none;
+    
+}
+.form_logar input::placeholder{
+    padding-left: 3px;
+    font-size: 1.2em;
+    color: #383838;
+}
+.name_input{
+    position: relative;
+    bottom: -29px;
+    font-size: 1.0em;
+    color: #616161;
+
+}
+.form_logar button{
+    width: 25vw;
+    height: 6vh;
+    background-color:#979797;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.0em;
+}
+.espaco_btn{
+    padding-top: 30px;
+}
+.icon_login{
+    width: 100px;
+    height: 96px;
+    position: absolute;
+    top: 56px;
+    
+}
+.btn2{
+    width: 25vw;
+    height: 6vh;
+    cursor: pointer;
+    font-size: 1.0em;
+  
+    color: #555555;
+    border: 2px solid #979797;
+    border-radius: 4px;
+}
+.t_modal{
+    padding: 30px 0px 18px 0px;
+}
+
+/* modal */
+/*cadastro*/
+.container_login{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 40px;
+}
+.form_cadas{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+/*cadastro*/
+
+.esquerdo_form, .direito_form{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    align-items: center;
+    line-height: 5.0em;
+    flex-wrap: wrap;
+}
+.esquerdo_form input{
+    width: 30vw;
+    height: 7vh;
+    border: 0.5px solid #979797;
+    border-radius: 2px;
+    padding-left: 3px;
+    
+}
+.esquerdo_form input::placeholder{
+    padding-left: 3px;
+    font-size: 1.2em;
+    color: #383838;
+}
+.direito_form input{
+    height: 7vh;
+    width: 30vw;
+    border: 0.5px solid #979797;
+    border-radius: 2px;
+    padding-left: 3px;
+}
+.direito_form input::placeholder{
+    padding-left: 3px;
+    font-size: 1.2em;
+    color: #383838;
+}
+.Endereco{
+    display: flex;
+    width: 30vw;
+    justify-content: space-between;
+    align-items: center; 
+}
+.input_e input{
+    width: 23vw;
+}
+.input_n input{
+    width: 5vw;
+}
+.radius{
+    display: flex;
+    width: 30vw;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+.radius input{
+    width: 15px;
+}
+.r_span{
+    position: absolute;
+    bottom: 5px;
+}
+.btn_i_1, .btn_i_2{
+    width: 30vw;
+    height: 6.5vh;
+    cursor: pointer;
+    color: white;
+    border:none;
+    border-radius: 4px;
+    font-size: 1.0em;
+}
+.btn_i_1{
+    background-color: rgb(146, 185, 68);
+}
+.btn_i_2 {
+    background-color: rgb(180, 71, 51);
+}
+
